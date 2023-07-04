@@ -1,24 +1,29 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" . }}
-
-<h1>
-    <span class="text-primary">{{ .Params.hero.primaryText }}</span> <br>
-    {{ .Params.hero.secondaryText }}
-</h1>
-<p>{{ .Params.hero.paragraphText }}</p>
-<a href="{{ .Params.hero.link1 }}" class="btn btn-primary">
-    {{ .Params.hero.buttonText1 }}
-    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path id="arrow_forward_2"
-              d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
-    </svg>
-</a>
-<a href="{{ .Params.hero.link2 }}" class="btn btn-primary">
-    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path id="arrow_forward_2"
-              d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
-    </svg>
-    {{ .Params.hero.buttonText2 }}
-</a>
+<section class="hero-section">
+    <div class="hero-wrap text-center">
+        <h1>
+            <span class="text-primary">{{ .Params.hero.primaryText }}</span> <br>
+            {{ .Params.hero.secondaryText }}
+        </h1>
+        <p>{{ .Params.hero.paragraphText }}</p>
+        <div class="d-flex flex-column flex-sm-row justify-content-center">
+            <a href="{{ .Params.hero.link1 }}" class="btn btn-primary">
+                {{ .Params.hero.buttonText1 }}
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_forward_2"
+                          d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
+                </svg>
+            </a>
+            <a href="{{ .Params.hero.link2 }}" class="btn btn-primary">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_forward_2"
+                          d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
+                </svg>
+                {{ .Params.hero.buttonText2 }}
+            </a>
+        </div>
+    </div>
+</section>
 
 {{ partial "footer.html" . }}
