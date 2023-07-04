@@ -24,5 +24,18 @@ collections:
                   { label: "Title Primary Text", name: "primaryText", widget: string },
                   { label: "Title Secondary Text", name: "secondaryText", widget: "text" },
                   { label: "Hero text", name: "paragraphText", widget: "text" },
+                  { label: "Link 1", name: "link1", widget: "string" },
+                  { label: "Button 1 text", name: "buttonText1", widget: "string" }
+                  { label: "Link 2", name: "link2", widget: "string" },
+                  { label: "Button 2 text", name: "buttonText2", widget: "string" }
                 ],
             }
+          - {
+            label: "Video",
+            name: "video",
+            widget: "object",
+            fields:
+              [
+                { label: "Video Link", name: "videoLink", widget: string },
+              ],
+          }
