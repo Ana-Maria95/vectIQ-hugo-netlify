@@ -43,27 +43,15 @@
         </div>
 
         <div class="row boxes-wrap">
+            {{ range .Params.softwareSelection.boxes }}
             <div class="col-12 col-lg-4">
                 <div class="box bg-primary text-center">
-                    <img src="{{ .Params.softwareSelection.boxes.0.image }}" alt="Time consuming icon"/>
-                    <h6 class="text-light">{{ .Params.softwareSelection.boxes.0.title }}</h6>
-                    <p class="text-light">{{ .Params.softwareSelection.boxes.0.description }}</p>
+                    <img src="{{ .image }}" alt="Time consuming icon"/>
+                    <h6 class="text-light">{{ .title }}</h6>
+                    <p class="text-light">{{ .description }}</p>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <div class="box bg-primary text-center">
-                    <img src="{{ .Params.softwareSelection.boxes.1.image }}" alt="Cost intensive"/>
-                    <h6 class="text-light">{{ .Params.softwareSelection.boxes.1.title }}</h6>
-                    <p class="text-light">{{ .Params.softwareSelection.boxes.1.description }}</p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="box bg-primary text-center">
-                    <img src="{{ .Params.softwareSelection.boxes.2.image }}" alt="Suboptimal choices"/>
-                    <h6 class="text-light">{{ .Params.softwareSelection.boxes.2.title }}</h6>
-                    <p class="text-light">{{ .Params.softwareSelection.boxes.2.description }}</p>
-                </div>
-            </div>
+            {{ end }}
         </div>
     </div>
     <div class="background-wrap-left">
