@@ -83,9 +83,9 @@
                 <div class="row flex-column flex-lg-row">
                     {{ range .Params.softwareSelection.steps }}
                     <div class="col-lg-3">
-                        <h6 class="custom-heading">{{ .content.[0] }}</h6>
+                        <h6 class="custom-heading">{{ .content 0 }}</h6>
                         <ul>
-                            {{ range (slice .content.[1:]...) }}
+                            {{ range (slice .content 1) }}
                             <li>{{ . }}</li>
                             {{ end }}
                         </ul>
