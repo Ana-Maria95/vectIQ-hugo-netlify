@@ -59,7 +59,7 @@ collections:
                 name: "boxes",
                 widget: "list",
                 fields: [
-                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image", name: "image", widget: "string" },
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Description", name: "description", widget: "string" }
                 ]
@@ -80,7 +80,7 @@ collections:
                   }
                 ]
               },
-              { label: "Image", name: "image", widget: "image" },
+              { label: "Image", name: "image", widget: "string" },
               { label: "Image Alt Text", name: "imageAlt", widget: "string" },
               {
                 label: "Second Title Section",
@@ -88,14 +88,14 @@ collections:
                 widget: "object",
                 fields: [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Small Range Image", name: "smallRangeImage", widget: "image" },
+                  { label: "Small Range Image", name: "smallRangeImage", widget: "string" },
                   { label: "Small Range Image Alt Text", name: "smallRangeImageAlt", widget: "string" },
                   {
                     label: "Images",
                     name: "images",
                     widget: "object",
                     fields: [
-                      { label: "Solution Diagram Image", name: "solutionDiagramImage", widget: "image" },
+                      { label: "Solution Diagram Image", name: "solutionDiagramImage", widget: "string" },
                       { label: "Solution Diagram Image Alt Text", name: "solutionDiagramImageAlt", widget: "string" }
                     ]
                   }
@@ -112,7 +112,7 @@ collections:
                     name: "icons",
                     widget: "list",
                     fields: [
-                      { label: "Icon Image", name: "src", widget: "image" },
+                      { label: "Icon Image", name: "src", widget: "string" },
                       { label: "Icon Alt Text", name: "alt", widget: "string" },
                       { label: "Icon Title", name: "title", widget: "string" },
                       { label: "Icon Description", name: "description", widget: "string" }
