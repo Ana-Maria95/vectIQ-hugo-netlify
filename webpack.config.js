@@ -3,12 +3,11 @@ const path = require('path');
 module.exports = {
     mode: 'production',
     entry: {
-        main: './assets/js/main.js',
-        styles: './assets/scss/main.scss',
+        main: './assets/js/main.js'
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'static'),
     },
     module: {
         rules: [
