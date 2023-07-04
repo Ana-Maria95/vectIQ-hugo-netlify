@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>{{ .Site.Title }}</title>
+	<title>{{ .Params.Title }}</title>
 
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -14,10 +14,10 @@
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}
 
-	<meta name="title" content="{{ .Site.Title }}">
-	<meta name="description" content="{{ .Description }}">
-	<meta name="keywords" content="{{ .Keywords }}">
-	<meta name="author" content="{{ .Author }}">
+	<meta name="title" content="{{ .Params.Title }}">
+	<meta name="description" content="{{ .Params.Description }}">
+	<meta name="keywords" content="{{ .Params.Keywords }}">
+	<meta name="author" content="{{ .Params.Author }}">
 
 </head>
 
