@@ -78,7 +78,7 @@
             <div class="d-flex flex-column flex-lg-row">
                 {{ range .Params.softwareSelection.steps }}
                 <div class="d-flex align-items-center mb-3 mb-lg-0">
-                    <div class="number-icon {{ if eq .number 1 }}first-number-icon{{ else if eq .number 2 }}second-number-icon{{ else if eq .number 3 }}third-number-icon{{ else if eq .number 4 }}fourth-number-icon{{ end }}">
+                    <div class="number-icon {{ if eq .number '1' }}first-number-icon{{ else if eq .number '2' }}second-number-icon{{ else if eq .number '3' }}third-number-icon{{ else if eq .number '4' }}fourth-number-icon{{ end }}">
                         <span>{{ .number }}</span>
                     </div>
                     <div class="number-text">{{ .title }}</div>
