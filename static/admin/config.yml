@@ -11,10 +11,10 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Author", name: "author", widget: "string" }
-          - { label: "Keywords", name: "keywords", widget: "string" }
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Description", name: "Description", widget: "string" }
+          - { label: "Author", name: "Author", widget: "string" }
+          - { label: "Keywords", name: "Keywords", widget: "string" }
           - {
               label: "Hero",
               name: "hero",
