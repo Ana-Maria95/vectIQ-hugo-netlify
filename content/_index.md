@@ -21,7 +21,7 @@ softwareSelection:
   sectionTitle:
     mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
     subTitle: Traditional software selection process is broken
-    description: Internet scooting, trade shows, reviews, RFI, RFP...
+    description: Internet scooting, trade shows, reviews, RFI, RFP... 
   boxes:
     - title: TIME CONSUMING
       altText: Time conuming icon
