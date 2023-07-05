@@ -7,7 +7,7 @@ collections:
   - name: "partials"
     label: "Partials content"
     files:
-      - file: "partials/nav.html"
+      - file: "content/partials/nav.html"
         label: "Navigation"
         name: "nav"
         fields:
@@ -40,7 +40,7 @@ collections:
               - label: "Sign In Button URL"
                 name: "signInUrl"
                 widget: "string"
-      - file: "partials/footer.html"
+      - file: "content/partials/footer.html"
         label: "Footer"
         name: "footer"
         fields:
