@@ -44,7 +44,7 @@ collections:
             name: "video"
             widget: "object"
             fields:
-              - label: "Video Link", name: "videoLink", widget: string
+              - label: "Video Link", name: "videoLink", widget: "string"
               - label: "Hide Section", name: "hideVideoSection", widget: "boolean", default: false
           - label: "Software Selection"
             name: "softwareSelection"
