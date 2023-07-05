@@ -26,7 +26,7 @@
     </div>
 </section>
 
-{{ if .Params.videoSection.hideVideoSection }}
+{{ if not .Params.videoSection.hideVideoSection }}
 <section class="video-section">
     <div class="container">
         {{ if and .Params.videoSection.videoURL .Params.videoSection.videoTitle }}
@@ -39,7 +39,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.softwareSelection.hideSoftwareSection }}
+{{ if not .Params.softwareSelection.hideSoftwareSection }}
 <section class="software-selection">
     <div class="container">
         <div class="section-title text-center">
@@ -156,7 +156,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.timelineSection.hideTimelineSection }}
+{{ if not .Params.timelineSection.hideTimelineSection }}
 <section class="timeline-section">
     {{ range .Params.timelineSection }}
     <div class="container-timeline {{ if .reverse }}reverse{{ end }}">
@@ -178,7 +178,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.approachSection.hideApproachSection }}
+{{ if not .Params.approachSection.hideApproachSection }}
 <section class="approach-section">
     <div class="bg-light-blue">
         <h2>{{ .Params.approachSection.sectionTitle }}</h2>
@@ -221,7 +221,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.pricingSection.hidePricingSection }}
+{{ if not .Params.pricingSection.hidePricingSection }}
 <section class="pricing-section">
     <div class="container">
         <h2>{{ .Params.pricingSection.sectionTitle }}</h2>
@@ -263,7 +263,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.forWhoSection.hideWhoSection }}
+{{ if not .Params.forWhoSection.hideWhoSection }}
 <section class="for-who-section">
     <div class="container">
         <h2>{{ .Params.forWhoSection.sectionTitle }}</h2>
@@ -282,7 +282,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.customerReviewsSection.hideReviewsSection }}
+{{ if not .Params.customerReviewsSection.hideReviewsSection }}
 <section class="customer-reviews">
     <div class="container">
         <h2>{{ .Params.customerReviewsSection.sectionTitle }}</h2>
@@ -324,7 +324,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.faqSection.hideFAQSection }}
+{{ if not .Params.faqSection.hideFAQSection }}
 <section class="faq-section">
     <div class="container">
         <h2>{{ .Params.faqSection.sectionTitle }}</h2>
@@ -393,7 +393,7 @@
 </section>
 {{ end }}
 
-{{ if .Params.contactSection.hideContactSection }}
+{{ if not .Params.contactSection.hideContactSection }}
 <section class="contact-section">
     <div class="container">
         <div class="contact-wrap">
