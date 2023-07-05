@@ -208,5 +208,61 @@
     </div>
 </section>
 
+<section class="pricing-section">
+    <div class="container">
+        <h2>{{ .Params.pricingSection.sectionTitle }}</h2>
+        <div class="row pricing-boxes">
+            {{ range .Params.pricingSection.pricingBoxes }}
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="pricing-box {{ .color }}">
+                    <div class="top-rectangle"></div>
+                    <h3 class="pricing-title">{{ .title }}</h3>
+                    <div class="same-height">
+                        <ul class="pricing-list">
+                            {{ range .items }}
+                            <li>{{ .item }}</li>
+                            {{ end }}
+                        </ul>
+                        {{ if .additionalText }}
+                        <span class="additional-span">{{ .additionalText }}</span>
+                        {{ end }}
+                    </div>
+                    <a href="#" class="btn btn-primary">
+                        {{ .buttonText }}
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path id="arrow_forward_2"
+                                  d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
+                        </svg>
+                    </a>
+                    <hr class="pricing-line">
+                    <p class="plan-details">{{ .planDetails }}</p>
+                    <ul class="plan-includes">
+                        {{ range .planIncludes }}
+                        <li>{{ .includeItem }}</li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="for-who-section">
+    <div class="container">
+        <h2>{{ .Params.forWhoSection.sectionTitle }}</h2>
+        <div class="row">
+            {{ range .Params.forWhoSection.columns }}
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="column">
+                    <img src="{{ .icon }}" alt="Icon" class="icon">
+                    <h3>{{ .title }}</h3>
+                    <p class="text-center">{{ .description }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
 
 {{ partial "footer.html" . }}
