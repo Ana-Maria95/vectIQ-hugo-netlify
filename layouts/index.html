@@ -44,8 +44,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h2>{{ .Params.softwareSelection.sectionTitle.mainTitle }}</h2>
-            <h5 class="text-primary">{{ .Params.softwareSelection.sectionTitle.subTitle }}</h5>
-            <p class="mb-0">{{ .Params.softwareSelection.sectionTitle.description }}</p>
+
         </div>
 
         <div class="row boxes-wrap">
@@ -65,8 +64,8 @@
         <div class="section-title text-center">
             <h2>{{ .Params.softwareSelection.sectionTitle }}</h2>
             <h5 class="box-white text-primary bg-white">{{ .Params.softwareSelection.subtitle }}</h5>
-            <img src="{{ with .Params.softwareSelection.image }}{{ . | relURL }}{{ end }}" alt="{{ .Params.softwareSelection.imageAlt }}" loading="lazy" />
-
+            <img src="{{ with .Params.softwareSelection.image }}{{ . | relURL }}{{ end }}"
+                 alt="{{ .Params.softwareSelection.imageAlt }}" loading="lazy"/>
         </div>
     </div>
     <div class="container">
