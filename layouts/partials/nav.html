@@ -1,20 +1,19 @@
-{{ $site := .Site }}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="{{ $site.Params.logoUrl }}"><img src="{{ $site.Params.logoImage }}" alt="{{ $site.Params.logoAlt }}"></a>
+    <a class="navbar-brand" href="{{ .Params.logoUrl }}"><img src="{{ .Params.logoImage }}" alt="{{ .Params.logoAlt }}"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
       <ul class="navbar-nav mx-auto">
-        {{ range $site.Data.menu.main }}
+        {{ range .Params.links }}
         <li class="nav-item">
-          <a class="nav-link {{ if eq .url $site.Page.URL }}active{{ end }}" href="{{ .url }}">{{ .name }}</a>
+          <a class="nav-link {{ if eq .url $.Page.URL }}active{{ end }}" href="{{ .url }}">{{ .name }}</a>
         </li>
         {{ end }}
       </ul>
-      <a href="{{ $site.Params.signInUrl }}" class="btn btn-primary">{{ $site.Params.signInText }}</a>
+      <a href="{{ .Params.signInUrl }}" class="btn btn-primary">{{ .Params.signInText }}</a>
     </div>
   </div>
 </nav>
