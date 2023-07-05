@@ -97,6 +97,9 @@ collections:
           - label: "Copyright"
             name: "copyright"
             widget: "string"
+          - label: "Linked In link"
+            name: "linkedIN"
+            widget: "string"
   - name: "pages"
     label: "Pages"
     files:
