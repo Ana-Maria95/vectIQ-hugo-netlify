@@ -18,10 +18,20 @@ video:
   videoLink: https://www.youtube.com/embed/D0UnqGm_miA
   hideVideoSection: false
 softwareSelection:
-  sectionTitleSoftware:
-    mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
-    subTitle: Traditional software selection process is broken
-    description: Internet scooting, trade shows, reviews, RFI, RFP...
+  secondTitleSection:
+    images:
+      solutionDiagramImage: /images/solution-diagram.png
+      solutionDiagramImageAlt: Solution
+    smallRangeImageAlt: Small Range Image
+    smallRangeImage: /images/small-range-img.png
+    title: To vektIQ Approach
+  stepsCircleImage: images/circles-traditional-approach.svg
+  stepsCircleImageAlt: Circles decoration icon
+  approachBuild:
+    title: "VektIQ is built on decision science principles, years in software
+      industry experience & powered by:"
+  imageAlt: Range image
+  sectionStepsTitle: Our innovative approach eliminates unnecessary complexity
   boxes:
     - title: TIME CONSUMING
       altText: Time conuming icon
@@ -35,19 +45,13 @@ softwareSelection:
       title: SUBOPTIMAL CHOICES
       description: 50% of solutions deployed
       altText: Suboptimal choices icon
-  hideSoftwareSection: false
-  approachBuild:
-    title: "VektIQ is built on decision science principles, years in software
-      industry experience & powered by:"
-  secondTitleSection:
-    images:
-      solutionDiagramImage: /images/solution-diagram.png
-      solutionDiagramImageAlt: Solution
-    smallRangeImageAlt: Small Range Image
-    smallRangeImage: /images/small-range-img.png
-    title: To vektIQ Approach
-  imageAlt: Range image
+  sectionTitleSoftware:
+    mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
+    subTitle: Traditional software selection process is broken
+    description: Internet scooting, trade shows, reviews, RFI, RFP...
+  sectionStepsSubtitle: From Traditional Approaches
   image: images/range-img.svg
+  hideSoftwareSection: false
 approachSection:
   sectionTitle: A win-win approach for companies & vendors
   sectionSubtitle: Companies, Make Better Decision In No Time & Costs
