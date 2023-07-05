@@ -18,7 +18,7 @@ video:
   videoLink: https://www.youtube.com/embed/D0UnqGm_miA
   hideVideoSection: false
 softwareSelection:
-  sectionTitle:
+  sectionTitleSoftware:
     mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
     subTitle: Traditional software selection process is broken
     description: Internet scooting, trade shows, reviews, RFI, RFP... 
