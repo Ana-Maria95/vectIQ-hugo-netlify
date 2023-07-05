@@ -26,14 +26,20 @@
     </div>
 </section>
 
+{{ if .Params.videoSection.hideVideoSection }}
 <section class="video-section">
     <div class="container">
-        <iframe src="{{ .Params.video.videoLink }}" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        {{ if and .Params.videoSection.videoURL .Params.videoSection.videoTitle }}
+        <h2>{{ .Params.videoSection.videoTitle }}</h2>
+        <div class="video-wrapper">
+            <iframe src="{{ .Params.videoSection.videoURL }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        {{ end }}
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.softwareSelection.hideSoftwareSection }}
 <section class="software-selection">
     <div class="container">
         <div class="section-title text-center">
@@ -148,7 +154,9 @@
         </div>
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.timelineSection.hideTimelineSection }}
 <section class="timeline-section">
     {{ range .Params.timelineSection }}
     <div class="container-timeline {{ if .reverse }}reverse{{ end }}">
@@ -168,7 +176,9 @@
     </div>
     {{ end }}
 </section>
+{{ end }}
 
+{{ if .Params.approachSection.hideApproachSection }}
 <section class="approach-section">
     <div class="bg-light-blue">
         <h2>{{ .Params.approachSection.sectionTitle }}</h2>
@@ -209,7 +219,9 @@
         </div>
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.pricingSection.hidePricingSection }}
 <section class="pricing-section">
     <div class="container">
         <h2>{{ .Params.pricingSection.sectionTitle }}</h2>
@@ -249,7 +261,9 @@
         </div>
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.forWhoSection.hideWhoSection }}
 <section class="for-who-section">
     <div class="container">
         <h2>{{ .Params.forWhoSection.sectionTitle }}</h2>
@@ -266,7 +280,9 @@
         </div>
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.customerReviewsSection.hideReviewsSection }}
 <section class="customer-reviews">
     <div class="container">
         <h2>{{ .Params.customerReviewsSection.sectionTitle }}</h2>
@@ -306,7 +322,9 @@
 
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.faqSection.hideFAQSection }}
 <section class="faq-section">
     <div class="container">
         <h2>{{ .Params.faqSection.sectionTitle }}</h2>
@@ -373,7 +391,9 @@
         </div>
     </div>
 </section>
+{{ end }}
 
+{{ if .Params.contactSection.hideContactSection }}
 <section class="contact-section">
     <div class="container">
         <div class="contact-wrap">
@@ -388,6 +408,6 @@
         </div>
     </div>
 </section>
-
+{{ end }}
 
 {{ partial "footer.html" . }}

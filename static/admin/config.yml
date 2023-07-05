@@ -11,38 +11,46 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "Title", widget: "string" }
-          - { label: "Description", name: "Description", widget: "string" }
-          - { label: "Author", name: "Author", widget: "string" }
-          - { label: "Keywords", name: "Keywords", widget: "string" }
-          - {
-              label: "Hero",
-              name: "hero",
-              widget: "object",
-              fields:
-                [
-                  { label: "Title Primary Text", name: "primaryText", widget: string },
-                  { label: "Title Secondary Text", name: "secondaryText", widget: "text" },
-                  { label: "Hero text", name: "paragraphText", widget: "text" },
-                  { label: "Link 1", name: "link1", widget: "string" },
-                  { label: "Button 1 text", name: "buttonText1", widget: "string" },
-                  { label: "Link 2", name: "link2", widget: "string" },
-                  { label: "Button 2 text", name: "buttonText2", widget: "string" }
-                ],
-            }
-          - {
-            label: "Video",
-            name: "video",
-            widget: "object",
+          - label: "Title", name: "Title", widget: "string"
+          - label: "Description", name: "Description", widget: "string"
+          - label: "Author", name: "Author", widget: "string"
+          - label: "Keywords", name: "Keywords", widget: "string"
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
             fields:
-              [
-                { label: "Video Link", name: "videoLink", widget: string },
-              ],
-          }
+              - label: "Title Primary Text"
+                name: "primaryText"
+                widget: "string"
+              - label: "Title Secondary Text"
+                name: "secondaryText"
+                widget: "text"
+              - label: "Hero text"
+                name: "paragraphText"
+                widget: "text"
+              - label: "Link 1"
+                name: "link1"
+                widget: "string"
+              - label: "Button 1 text"
+                name: "buttonText1"
+                widget: "string"
+              - label: "Link 2"
+                name: "link2"
+                widget: "string"
+              - label: "Button 2 text"
+                name: "buttonText2"
+                widget: "string"
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - label: "Video Link", name: "videoLink", widget: string
+              - label: "Hide Section", name: "hideVideoSection", widget: "boolean", default: false
           - label: "Software Selection"
             name: "softwareSelection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideSoftwareSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "object"
@@ -149,6 +157,7 @@ collections:
             name: "timelineSection"
             widget: "list"
             fields:
+              - label: "Hide Section", name: "hideTimelineSection", widget: "boolean", default: false
               - label: "Reverse"
                 name: "reverse"
                 widget: "boolean"
@@ -178,6 +187,7 @@ collections:
             name: "approachSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideApproachSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -208,6 +218,7 @@ collections:
             name: "pricingSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hidePricingSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -251,6 +262,7 @@ collections:
             name: "forWhoSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideWhoSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -271,6 +283,7 @@ collections:
             name: "customerReviewsSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideReviewSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -291,6 +304,7 @@ collections:
             name: "faqSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideFAQSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -318,6 +332,7 @@ collections:
             name: "contactSection"
             widget: "object"
             fields:
+              - label: "Hide Section", name: "hideContactSection", widget: "boolean", default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
