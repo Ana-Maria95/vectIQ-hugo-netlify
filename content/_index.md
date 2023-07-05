@@ -16,7 +16,7 @@ hero:
   buttonText1: Get your assessment for 990$
 video:
   videoLink: https://www.youtube.com/embed/D0UnqGm_miA
-  hideVideoSection: true
+  hideVideoSection: false
 softwareSelection:
   sectionTitle:
     mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
@@ -35,7 +35,7 @@ softwareSelection:
       title: SUBOPTIMAL CHOICES
       description: 50% of solutions deployed
       altText: Suboptimal choices icon
-  hideSoftwareSection: true
+  hideSoftwareSection: false
   approachBuild:
     title: "VektIQ is built on decision science principles, years in software
       industry experience & powered by:"
@@ -51,21 +51,21 @@ softwareSelection:
 approachSection:
   sectionTitle: A win-win approach for companies & vendors
   sectionSubtitle: Companies, Make Better Decision In No Time & Costs
-  hideApproachSection: true
+  hideApproachSection: false
 pricingSection:
-  hidePricingSection: true
+  hidePricingSection: false
   sectionTitle: Pricing
 forWhoSection:
   hideWhoSection: false
   sectionTitle: Who Is it for?
 customerReviewsSection:
-  hideReviewSection: true
+  hideReviewSection: false
   sectionTitle: What Our Customers Say
 faqSection:
-  hideFAQSection: true
+  hideFAQSection: false
   sectionTitle: Frequently Asked Questions
 contactSection:
-  hideContactSection: true
+  hideContactSection: false
   sectionTitle: Have More Questions? We Are Happy To Help, Contact Our Team Now.
   buttonText: Contact Sales
   buttonLink: "#"
