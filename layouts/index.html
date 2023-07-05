@@ -46,7 +46,7 @@
             {{ range .Params.softwareSelection.boxes }}
             <div class="col-12 col-lg-4">
                 <div class="box bg-primary text-center">
-                    <img src="{{ .image }}" alt="Time consuming icon"/>
+                    <img src="{{ .image }}" alt="Time consuming icon" loading="lazy"/>
                     <h6 class="text-light">{{ .title }}</h6>
                     <p class="text-light">{{ .description }}</p>
                 </div>
@@ -58,7 +58,8 @@
         <div class="section-title text-center">
             <h2>{{ .Params.softwareSelection.sectionTitle }}</h2>
             <h5 class="box-white text-primary bg-white">{{ .Params.softwareSelection.subtitle }}</h5>
-            <img src="{{ .Params.softwareSelection.image }}" alt="{{ .Params.softwareSelection.imageAlt }}"/>
+            <img src="{{ .Params.softwareSelection.image }}" alt="{{ .Params.softwareSelection.imageAlt }}"
+                 loading="lazy"/>
         </div>
     </div>
     <div class="container">
@@ -77,7 +78,8 @@
                 {{ end }}
             </div>
             <div class="track-wrap">
-                <img src="{{ .Params.softwareSelection.steps.image }}" alt="{{ .Params.softwareSelection.steps.imageAlt }}">
+                <img src="{{ .Params.softwareSelection.steps.image }}"
+                     alt="{{ .Params.softwareSelection.steps.imageAlt }}" loading="lazy">
             </div>
             <div class="row flex-column flex-lg-row">
                 <div class="row flex-column flex-lg-row">
@@ -94,7 +96,8 @@
                 </div>
             </div>
         </div>
-        <img src="{{ .Params.softwareSelection.steps.circleImage }}" alt="decoration" class="{{ .Params.softwareSelection.steps.circleImageAlt }}"/>
+        <img src="{{ .Params.softwareSelection.steps.circleImage }}" alt="decoration"
+             class="{{ .Params.softwareSelection.steps.circleImageAlt }}" loading="lazy"/>
     </div>
     <div class="background-wrap-right">
         <div class="section-title text-center">
@@ -103,8 +106,11 @@
             <span class="text-center text-primary">
                 ~3 weeks time
             </span>
-                <img src="{{ .Params.softwareSelection.secondTitleSection.smallRangeImage }}" alt="{{ .Params.softwareSelection.secondTitleSection.smallRangeImageAlt }}"/>
-                <img src="{{ .Params.softwareSelection.secondTitleSection.images.solutionDiagramImage }}" alt="{{ .Params.softwareSelection.secondTitleSection.images.solutionDiagramImageAlt }}"/>
+                <img src="{{ .Params.softwareSelection.secondTitleSection.smallRangeImage }}"
+                     alt="{{ .Params.softwareSelection.secondTitleSection.smallRangeImageAlt }}" loading="lazy"/>
+                <img src="{{ .Params.softwareSelection.secondTitleSection.images.solutionDiagramImage }}"
+                     alt="{{ .Params.softwareSelection.secondTitleSection.images.solutionDiagramImageAlt }}"
+                     loading="lazy"/>
             </div>
         </div>
     </div>
@@ -115,25 +121,88 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="content">
-                        <img src="{{ .Params.softwareSelection.approachBuild.icon1.src }}" alt="{{ .Params.softwareSelection.approachBuild.icon1.alt }}" class="icon">
+                        <img src="{{ .Params.softwareSelection.approachBuild.icon1.src }}"
+                             alt="{{ .Params.softwareSelection.approachBuild.icon1.alt }}" loading="lazy" class="icon">
                         <h4>{{ .Params.softwareSelection.approachBuild.icon1.title }}</h4>
                         <p class="text-center">{{ .Params.softwareSelection.approachBuild.icon1.description }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="content">
-                        <img src="{{ .Params.softwareSelection.approachBuild.icon2.src }}" alt="{{ .Params.softwareSelection.approachBuild.icon2.alt }}" class="icon">
+                        <img src="{{ .Params.softwareSelection.approachBuild.icon2.src }}"
+                             alt="{{ .Params.softwareSelection.approachBuild.icon2.alt }}" loading="lazy" class="icon">
                         <h4>{{ .Params.softwareSelection.approachBuild.icon2.title }}</h4>
                         <p class="text-center">{{ .Params.softwareSelection.approachBuild.icon2.description }}</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="content">
-                        <img src="{{ .Params.softwareSelection.approachBuild.icon3.src }}" alt="{{ .Params.softwareSelection.approachBuild.icon3.alt }}" class="icon">
+                        <img src="{{ .Params.softwareSelection.approachBuild.icon3.src }}"
+                             alt="{{ .Params.softwareSelection.approachBuild.icon3.alt }}" loading="lazy" class="icon">
                         <h4>{{ .Params.softwareSelection.approachBuild.icon3.title }}</h4>
                         <p class="text-center">{{ .Params.softwareSelection.approachBuild.icon3.description }}</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="timeline-section">
+    {{ range .Params.timelineSection }}
+    <div class="container-timeline {{ if .reverse }}reverse{{ end }}">
+        <div class="content content-left">
+            <small>{{ .smallText }}</small>
+            <h3><span class="text-primary">{{ .heading }}</span></h3>
+            <ul>
+                {{ range .list }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="{{ if .reverse }}image-right{{ else }}image-left{{ end }}">
+            <img src="./assets/images/{{ .image }}" alt="{{ .alt }}">
+        </div>
+        <span class="timeline-number">{{ .number }}</span>
+    </div>
+    {{ end }}
+</section>
+
+<section class="approach-section">
+    <div class="bg-light-blue">
+        <h2>{{ .Params.approachSection.sectionTitle }}</h2>
+        <h3>{{ .Params.approachSection.sectionSubtitle }}</h3>
+        <div class="container">
+            <div class="row boxes-wrap">
+                {{ range .Params.approachSection.boxes }}
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="box bg-primary">
+                        <div class="content">
+                            <img src="{{ .image }}" alt="Approach icon"/>
+                            <div class="text">
+                                <p class="text-light">{{ .text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary second-approach-subsection">
+        <div class="container">
+            <div class="row boxes-wrap">
+                {{ range .Params.approachSection.secondBoxes }}
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="box">
+                        <div class="content">
+                            <img src="{{ .image }}" alt="Approach icon"/>
+                            <div class="text">
+                                <p>{{ .text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
             </div>
         </div>
     </div>

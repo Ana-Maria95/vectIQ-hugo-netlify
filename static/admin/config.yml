@@ -122,4 +122,36 @@ collections:
               }
             ]
           }
+          - label: "Timeline Section"
+            name: "timelineSection"
+            widget: "list"
+            fields: [
+               { label: "Reverse", name: "reverse", widget: "boolean" }
+               { label: "Small Text", name: "smallText", widget: "string" }
+               { label: "Heading", name: "heading", widget: "string" }
+               { label: "List", name: "list", widget: "list", allow_add: true, fields: [ { label: "Item", name: "item", widget: "string" } ] }
+               { label: "Image", name: "image", widget: "string" }
+               { label: "Alt Text", name: "alt", widget: "string" }
+               { label: "Number", name: "number", widget: "number" }
+            ]
+          - label: "Approach Section"
+            name: "approachSection"
+            widget: "object"
+            fields:
+              - label: "Section Title"
+                name: "sectionTitle"
+                widget: "string"
+              - label: "Section Subtitle"
+                name: "sectionSubtitle"
+                widget: "string"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "string"
+                  - label: "Text"
+                    name: "text"
+                    widget: "string"
 
