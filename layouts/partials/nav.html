@@ -1,7 +1,7 @@
 {{ $site := .Site }}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="{{ $site.logoUrl }}"><img src="{{ $site.logoImage }}" alt="{{ $site.logoAlt }}"></a>
+    <a class="navbar-brand" href="{{ $site.Params.logoUrl }}"><img src="{{ $site.Params.logoImage }}" alt="{{ $site.Params.logoAlt }}"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
         </li>
         {{ end }}
       </ul>
-      <a href="{{ $site.signInUrl }}" class="btn btn-primary">{{ $site.signInText }}</a>
+      <a href="{{ $site.Params.signInUrl }}" class="btn btn-primary">{{ $site.Params.signInText }}</a>
     </div>
   </div>
 </nav>
