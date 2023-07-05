@@ -24,7 +24,7 @@ softwareSelection:
     description: Internet scooting, trade shows, reviews, RFI, RFP...
   boxes:
     - title: TIME CONSUMING
-      altText: Time consuimg icon
+      altText: Time conuming icon
       description: ~6 months
       image: images/time-consuming.svg
     - title: COST INTENSIVE
