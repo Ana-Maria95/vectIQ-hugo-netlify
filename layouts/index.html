@@ -43,17 +43,18 @@
         </div>
 
         <div class="row boxes-wrap">
-            {{ range .Params.softwareSelection.boxes }}
+            {{ range $index, $box := .Params.softwareSelection.boxes }}
             <div class="col-12 col-lg-4">
                 <div class="box bg-primary text-center">
-                    <img src="{{ .image }}" alt="Time consuming icon" loading="lazy"/>
-                    <h6 class="text-light">{{ .title }}</h6>
-                    <p class="text-light">{{ .description }}</p>
+                    <img src="{{ $box.image }}" alt="{{ $box.altText }}" loading="lazy"/>
+                    <h6 class="text-light">{{ $box.title }}</h6>
+                    <p class="text-light">{{ $box.description }}</p>
                 </div>
             </div>
             {{ end }}
         </div>
     </div>
+
     <div class="background-wrap-left">
         <div class="section-title text-center">
             <h2>{{ .Params.softwareSelection.sectionTitle }}</h2>
@@ -79,7 +80,7 @@
             </div>
             <div class="track-wrap">
                 <img src="{{ .Params.softwareSelection.steps.image }}"
-                     alt="{{ .Params.softwareSelection.steps.imageAlt }}" loading="lazy">
+                     alt="{{ .Params.softwareSelection.steps.imageAlt }}" loading="lazy"/>
             </div>
             <div class="row flex-column flex-lg-row">
                 <div class="row flex-column flex-lg-row">
@@ -96,8 +97,8 @@
                 </div>
             </div>
         </div>
-        <img src="{{ .Params.softwareSelection.steps.circleImage }}" alt="decoration"
-             class="{{ .Params.softwareSelection.steps.circleImageAlt }}" loading="lazy"/>
+        <img src="{{ .Params.softwareSelection.steps.circleImage }}"
+             alt="{{ .Params.softwareSelection.steps.circleImageAlt }}" class="decoration-img" loading="lazy"/>
     </div>
     <div class="background-wrap-right">
         <div class="section-title text-center">
@@ -147,6 +148,7 @@
         </div>
     </div>
 </section>
+
 <section class="timeline-section">
     {{ range .Params.timelineSection }}
     <div class="container-timeline {{ if .reverse }}reverse{{ end }}">
@@ -272,7 +274,7 @@
             <div class="carousel-indicators">
                 {{ range $index, $review := .Params.customerReviewsSection.reviews }}
                 <button type="button" data-bs-target="#customerReviews" data-bs-slide-to="{{ $index }}"
-                        {{ if eq $index 0 }}class="active"{{ end }}></button>
+                        {{ if eq $index 0 }}class="active" {{ end }}></button>
                 {{ end }}
             </div>
             <div class="carousel-inner">
@@ -322,11 +324,16 @@
                         </h3>
                         <div id="collapse{{ $index }}" class="accordion-collapse collapse" data-bs-parent="#faq_1">
                             <div class="accordion-body">
-                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin adds
-                                the appropriate classes that we use to style each element. These classes control the overall
-                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also worth noting that just about
-                                any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin
+                                adds
+                                the appropriate classes that we use to style each element. These classes control the
+                                overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                this
+                                with custom CSS or overriding our default variables. It's also worth noting that just
+                                about
+                                any HTML can go within the <code>.accordion-body</code>, though the transition does
+                                limit overflow.
                             </div>
                         </div>
                     </div>
@@ -347,11 +354,16 @@
                         </h3>
                         <div id="faqCollapse{{ $index }}" class="accordion-collapse collapse" data-bs-parent="#faq_2">
                             <div class="accordion-body">
-                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin adds
-                                the appropriate classes that we use to style each element. These classes control the overall
-                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also worth noting that just about
-                                any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin
+                                adds
+                                the appropriate classes that we use to style each element. These classes control the
+                                overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                this
+                                with custom CSS or overriding our default variables. It's also worth noting that just
+                                about
+                                any HTML can go within the <code>.accordion-body</code>, though the transition does
+                                limit overflow.
                             </div>
                         </div>
                     </div>
@@ -376,7 +388,6 @@
         </div>
     </div>
 </section>
-
 
 
 {{ partial "footer.html" . }}

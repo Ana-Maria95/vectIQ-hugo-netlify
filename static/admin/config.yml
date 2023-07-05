@@ -39,89 +39,112 @@ collections:
                 { label: "Video Link", name: "videoLink", widget: string },
               ],
           }
-          - {
-            label: "Software Selection",
-            name: "softwareSelection",
-            widget: "object",
-            fields: [
-              {
-                label: "Section Title",
-                name: "sectionTitle",
-                widget: "object",
-                fields: [
-                  { label: "Main Title", name: "mainTitle", widget: "string" },
-                  { label: "Sub Title", name: "subTitle", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" }
-                ]
-              },
-              {
-                label: "Boxes",
-                name: "boxes",
-                widget: "list",
-                fields: [
-                  { label: "Image", name: "image", widget: "string" },
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" }
-                ]
-              },
-              {
-                label: "Steps",
-                name: "steps",
-                widget: "list",
-                fields: [
-                  { label: "Number", name: "number", widget: "number" },
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Duration", name: "duration", widget: "string", required: false },
-                  {
-                    label: "Content",
-                    name: "content",
-                    widget: "list",
-                    field: { label: "Item", name: "item", widget: "string" }
-                  }
-                ]
-              },
-              { label: "Image", name: "image", widget: "string" },
-              { label: "Image Alt Text", name: "imageAlt", widget: "string" },
-              {
-                label: "Second Title Section",
-                name: "secondTitleSection",
-                widget: "object",
-                fields: [
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Small Range Image", name: "smallRangeImage", widget: "string" },
-                  { label: "Small Range Image Alt Text", name: "smallRangeImageAlt", widget: "string" },
-                  {
-                    label: "Images",
-                    name: "images",
-                    widget: "object",
-                    fields: [
-                      { label: "Solution Diagram Image", name: "solutionDiagramImage", widget: "string" },
-                      { label: "Solution Diagram Image Alt Text", name: "solutionDiagramImageAlt", widget: "string" }
-                    ]
-                  }
-                ]
-              },
-              {
-                label: "Approach Build",
-                name: "approachBuild",
-                widget: "object",
-                fields: [
-                  { label: "Title", name: "title", widget: "string" },
-                  {
-                    label: "Icons",
-                    name: "icons",
-                    widget: "list",
-                    fields: [
-                      { label: "Icon Image", name: "src", widget: "string" },
-                      { label: "Icon Alt Text", name: "alt", widget: "string" },
-                      { label: "Icon Title", name: "title", widget: "string" },
-                      { label: "Icon Description", name: "description", widget: "string" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
+          - label: "Software Selection"
+            name: "softwareSelection"
+            widget: "object"
+            fields:
+              - label: "Section Title"
+                name: "sectionTitle"
+                widget: "object"
+                fields:
+                  - label: "Main Title"
+                    name: "mainTitle"
+                    widget: "string"
+                  - label: "Sub Title"
+                    name: "subTitle"
+                    widget: "string"
+                  - label: "Description"
+                    name: "description"
+                    widget: "string"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
+                  - label: "Alt Text"
+                    name: "altText"
+                    widget: "string"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Description"
+                    name: "description"
+                    widget: "string"
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - label: "Number"
+                    name: "number"
+                    widget: "number"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Duration"
+                    name: "duration"
+                    widget: "string"
+                    required: false
+                  - label: "Content"
+                    name: "content"
+                    widget: "list"
+                    field:
+                      label: "Item"
+                      name: "item"
+                      widget: "string"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Image Alt Text"
+                name: "imageAlt"
+                widget: "string"
+              - label: "Second Title Section"
+                name: "secondTitleSection"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Small Range Image"
+                    name: "smallRangeImage"
+                    widget: "image"
+                  - label: "Small Range Image Alt Text"
+                    name: "smallRangeImageAlt"
+                    widget: "string"
+                  - label: "Images"
+                    name: "images"
+                    widget: "object"
+                    fields:
+                      - label: "Solution Diagram Image"
+                        name: "solutionDiagramImage"
+                        widget: "image"
+                      - label: "Solution Diagram Image Alt Text"
+                        name: "solutionDiagramImageAlt"
+                        widget: "string"
+              - label: "Approach Build"
+                name: "approachBuild"
+                widget: "object"
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Icons"
+                    name: "icons"
+                    widget: "list"
+                    fields:
+                      - label: "Icon Image"
+                        name: "src"
+                        widget: "image"
+                      - label: "Icon Alt Text"
+                        name: "alt"
+                        widget: "string"
+                      - label: "Icon Title"
+                        name: "title"
+                        widget: "string"
+                      - label: "Icon Description"
+                        name: "description"
+                        widget: "string"
           - label: "Timeline Section"
             name: "timelineSection"
             widget: "list"
