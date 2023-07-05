@@ -148,15 +148,32 @@ collections:
           - label: "Timeline Section"
             name: "timelineSection"
             widget: "list"
-            fields: [
-               { label: "Reverse", name: "reverse", widget: "boolean" },
-               { label: "Small Text", name: "smallText", widget: "string" },
-               { label: "Heading", name: "heading", widget: "string" },
-               { label: "List", name: "list", widget: "list", allow_add: true, fields: [ { label: "Item", name: "item", widget: "string" } ] },
-               { label: "Image", name: "image", widget: "string" },
-               { label: "Alt Text", name: "alt", widget: "string" },
-               { label: "Number", name: "number", widget: "number" }
-            ]
+            fields:
+              - label: "Reverse"
+                name: "reverse"
+                widget: "boolean"
+              - label: "Small Text"
+                name: "smallText"
+                widget: "string"
+              - label: "Heading"
+                name: "heading"
+                widget: "string"
+              - label: "List"
+                name: "list"
+                widget: "list"
+                field:
+                  label: "Item"
+                  name: "item"
+                  widget: "string"
+              - label: "Image"
+                name: "image"
+                widget: "image"
+              - label: "Alt Text"
+                name: "alt"
+                widget: "string"
+              - label: "Number"
+                name: "number"
+                widget: "string"
           - label: "Approach Section"
             name: "approachSection"
             widget: "object"
@@ -173,7 +190,17 @@ collections:
                 fields:
                   - label: "Image"
                     name: "image"
+                    widget: "image"
+                  - label: "Text"
+                    name: "text"
                     widget: "string"
+              - label: "Second Boxes"
+                name: "secondBoxes"
+                widget: "list"
+                fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "image"
                   - label: "Text"
                     name: "text"
                     widget: "string"
@@ -231,13 +258,13 @@ collections:
                 name: "columns"
                 widget: "list"
                 fields:
-                  - label: "Column Icon"
+                  - label: "Icon"
                     name: "icon"
-                    widget: "string"
-                  - label: "Column Title"
+                    widget: "image"
+                  - label: "Title"
                     name: "title"
                     widget: "string"
-                  - label: "Column Description"
+                  - label: "Description"
                     name: "description"
                     widget: "text"
           - label: "Customer Reviews Section"
