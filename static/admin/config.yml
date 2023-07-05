@@ -164,7 +164,7 @@ collections:
                 widget: "boolean"
                 default: false
               - label: "Section Title"
-                name: "sectionTitle"
+                name: "sectionTitleSoftware"
                 widget: "object"
                 fields:
                   - label: "Main Title"
