@@ -21,7 +21,7 @@ softwareSelection:
   sectionTitleSoftware:
     mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
     subTitle: Traditional software selection process is broken
-    description: Internet scooting, trade shows, reviews, RFI, RFP... 
+    description: Internet scooting, trade shows, reviews, RFI, RFP...
   boxes:
     - title: TIME CONSUMING
       altText: Time conuming icon
@@ -41,10 +41,10 @@ softwareSelection:
       industry experience & powered by:"
   secondTitleSection:
     images:
-      solutionDiagramImage: images/solution-diagram.png
+      solutionDiagramImage: /static/images/solution-diagram.png
       solutionDiagramImageAlt: Solution
     smallRangeImageAlt: Small Range Image
-    smallRangeImage: images/small-range-img.png
+    smallRangeImage: /static/images/small-range-img.png
     title: To vektIQ Approach
   imageAlt: Range image
   image: images/range-img.svg
