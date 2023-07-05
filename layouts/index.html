@@ -63,10 +63,10 @@
 
     <div class="background-wrap-left">
         <div class="section-title text-center">
-            <h2>{{ .Params.softwareSelection.sectionTitle }}</h2>
-            <h5 class="box-white text-primary bg-white">{{ .Params.softwareSelection.subtitle }}</h5>
-            <img src="{{ with .Params.softwareSelection.image }}{{ . | relURL }}{{ end }}"
-                 alt="{{ .Params.softwareSelection.imageAlt }}" loading="lazy"/>
+            <h2>{{ .Params.softwareSelection.sectionStepsTitle }}</h2>
+            <h5 class="box-white text-primary bg-white">{{ .Params.softwareSelection.sectionStepsSubtitle }}</h5>
+            <img src="{{ with .Params.softwareSelection.stepsCircleImage }}{{ . | relURL }}{{ end }}"
+                 alt="{{ .Params.softwareSelection.stepsCircleImageAlt }}" loading="lazy"/>
         </div>
     </div>
     <div class="container">
