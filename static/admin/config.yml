@@ -4,6 +4,24 @@ backend:
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
+  - name: "partials"
+    label: "Partials content"
+    files:
+      - file: "partials/nav.html"
+        label: "Navigation"
+        name: "nav"
+        fields:
+          - label: "Main Menu"
+            name: "mainMenu"
+            widget: "list"
+            fields:
+              - label: "Logo Image", name: "logoImage", widget: "image"
+              - label: "Logo Alt Tag", name: "logoAlt", widget: "string"
+              - label: "Logo URL", name: "logoUrl", widget: "string"
+              - label: "Name", name: "name", widget: "string"
+              - label: "URL", name: "url", widget: "string"
+              - label: "Sign In Button Text", name: "signInText", widget: "string"
+              - label: "Sign In Button URL", name: "signInUrl", widget: "string"
   - name: "pages"
     label: "Pages"
     files:

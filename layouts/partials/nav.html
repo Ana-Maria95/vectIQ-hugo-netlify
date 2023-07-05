@@ -1,14 +1,19 @@
-<header class="site-header">
-  <nav class="site-nav">
-    <a class="logo" href="/static">
-      {{ .Site.Title }}
-    </a>
-    <ul class="main-menu">
-      {{ range.Site.Menus.main }}
-      <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-    </ul>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="{{ .Params.logoUrl }}"><img src="{{ .Params.logoImage }}" alt="{{ .Params.logoAlt }}"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        {{ range site.data.menu.main }}
+          <li class="nav-item">
+            <a class="nav-link {{ if eq .url .Page.URL }}active{{ end }}" href="{{ .url }}">{{ .name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <a href="{{ .Params.signInUrl }}" class="btn btn-primary">{{ .Params.signInText }}</a>
+    </div>
+  </div>
+</nav>
