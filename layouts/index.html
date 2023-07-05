@@ -265,4 +265,118 @@
     </div>
 </section>
 
+<section class="customer-reviews">
+    <div class="container">
+        <h2>{{ .Params.customerReviewsSection.sectionTitle }}</h2>
+        <div id="customerReviews" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {{ range $index, $review := .Params.customerReviewsSection.reviews }}
+                <button type="button" data-bs-target="#customerReviews" data-bs-slide-to="{{ $index }}"
+                        {{ if eq $index 0 }}class="active"{{ end }}></button>
+                {{ end }}
+            </div>
+            <div class="carousel-inner">
+                {{ range $index, $review := .Params.customerReviewsSection.reviews }}
+                <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                    <p>{{ $review.text }}</p>
+                    <div class="carousel-footer">
+                            <span class="customer-name">
+                                {{ $review.name }}
+                            </span>
+                        <span class="customer-position">
+                                {{ $review.position }}
+                            </span>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#customerReviews"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#customerReviews"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <h2>{{ .Params.faqSection.sectionTitle }}</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion" id="faq_1">
+                    {{ range $index, $item := .Params.faqSection.accordion1 }}
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse{{ $index }}" aria-expanded="false"
+                                    aria-controls="collapse{{ $index }}">
+                                {{ $item.question }}
+                            </button>
+                        </h3>
+                        <div id="collapse{{ $index }}" class="accordion-collapse collapse" data-bs-parent="#faq_1">
+                            <div class="accordion-body">
+                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin adds
+                                the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                                with custom CSS or overriding our default variables. It's also worth noting that just about
+                                any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="accordion" id="faq_2">
+                    {{ range $index, $item := .Params.faqSection.accordion2 }}
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse{{ $index }}" aria-expanded="false"
+                                    aria-controls="faqCollapse{{ $index }}">
+                                {{ $item.question }}
+                            </button>
+                        </h3>
+                        <div id="faqCollapse{{ $index }}" class="accordion-collapse collapse" data-bs-parent="#faq_2">
+                            <div class="accordion-body">
+                                <strong>{{ $item.answer }}</strong> It is shown by default, until the collapse plugin adds
+                                the appropriate classes that we use to style each element. These classes control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                                with custom CSS or overriding our default variables. It's also worth noting that just about
+                                any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-wrap">
+            <h2>{{ .Params.contactSection.sectionTitle }}</h2>
+            <a href="{{ .Params.contactSection.buttonLink }}" class="btn btn-primary">
+                {{ .Params.contactSection.buttonText }}
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path id="arrow_forward_2"
+                          d="M12.0001 19.6155L10.9309 18.5616L16.7425 12.7501H4.38477V11.2501H16.7425L10.9309 5.43859L12.0001 4.38477L19.6155 12.0001L12.0001 19.6155Z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
 {{ partial "footer.html" . }}
