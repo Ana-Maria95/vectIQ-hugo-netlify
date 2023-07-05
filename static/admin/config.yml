@@ -84,13 +84,21 @@ collections:
             name: "video"
             widget: "object"
             fields:
-              - label: "Video Link", name: "videoLink", widget: "string"
-              - label: "Hide Section", name: "hideVideoSection", widget: "boolean", default: false
+              - label: "Video Link"
+                name: "videoLink"
+                widget: "string"
+              - label: "Hide Section"
+                name: "hideVideoSection"
+                widget: "boolean"
+                default: false
           - label: "Software Selection"
             name: "softwareSelection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideSoftwareSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideSoftwareSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "object"
@@ -197,7 +205,10 @@ collections:
             name: "timelineSection"
             widget: "list"
             fields:
-              - label: "Hide Section", name: "hideTimelineSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideTimelineSection"
+                widget: "boolean"
+                default: false
               - label: "Reverse"
                 name: "reverse"
                 widget: "boolean"
@@ -227,7 +238,10 @@ collections:
             name: "approachSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideApproachSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideApproachSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -258,7 +272,10 @@ collections:
             name: "pricingSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hidePricingSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hidePricingSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -302,7 +319,10 @@ collections:
             name: "forWhoSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideWhoSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideWhoSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -323,7 +343,10 @@ collections:
             name: "customerReviewsSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideReviewSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideReviewSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -344,7 +367,10 @@ collections:
             name: "faqSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideFAQSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideFAQSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -372,7 +398,10 @@ collections:
             name: "contactSection"
             widget: "object"
             fields:
-              - label: "Hide Section", name: "hideContactSection", widget: "boolean", default: false
+              - label: "Hide Section"
+                name: "hideContactSection"
+                widget: "boolean"
+                default: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
