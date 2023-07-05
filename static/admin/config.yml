@@ -273,6 +273,7 @@ collections:
                 name: "hideTimelineSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Reverse"
                 name: "reverse"
                 widget: "boolean"
@@ -306,6 +307,7 @@ collections:
                 name: "hideApproachSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -340,6 +342,7 @@ collections:
                 name: "hidePricingSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -387,6 +390,7 @@ collections:
                 name: "hideWhoSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -411,6 +415,7 @@ collections:
                 name: "hideReviewSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -435,6 +440,7 @@ collections:
                 name: "hideFAQSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
@@ -466,6 +472,7 @@ collections:
                 name: "hideContactSection"
                 widget: "boolean"
                 default: false
+                required: false
               - label: "Section Title"
                 name: "sectionTitle"
                 widget: "string"
