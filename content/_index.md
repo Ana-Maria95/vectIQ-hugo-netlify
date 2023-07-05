@@ -41,10 +41,10 @@ softwareSelection:
       industry experience & powered by:"
   secondTitleSection:
     images:
-      solutionDiagramImage: /static/images/solution-diagram.png
+      solutionDiagramImage: /images/solution-diagram.png
       solutionDiagramImageAlt: Solution
     smallRangeImageAlt: Small Range Image
-    smallRangeImage: /static/images/small-range-img.png
+    smallRangeImage: /images/small-range-img.png
     title: To vektIQ Approach
   imageAlt: Range image
   image: images/range-img.svg
