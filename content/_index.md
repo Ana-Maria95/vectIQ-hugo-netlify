@@ -16,4 +16,58 @@ hero:
   buttonText1: Get your assessment for 990$
 video:
   videoLink: https://www.youtube.com/embed/D0UnqGm_miA
+  hideVideoSection: true
+softwareSelection:
+  sectionTitle:
+    mainTitle: Overwhelmed by software selection complexity for disappointing outcomes?!
+    subTitle: Traditional software selection process is broken
+    description: Internet scooting, trade shows, reviews, RFI, RFP...
+  boxes:
+    - title: TIME CONSUMING
+      altText: Time consuimg icon
+      description: ~6 months
+      image: images/time-consuming.svg
+    - title: COST INTENSIVE
+      description: ">$50k"
+      altText: Cost intensive icon
+      image: images/cost-intensive.svg
+    - image: images/suboptimal-choices.svg
+      title: SUBOPTIMAL CHOICES
+      description: 50% of solutions deployed
+      altText: Suboptimal choices icon
+  hideSoftwareSection: true
+  approachBuild:
+    title: "VektIQ is built on decision science principles, years in software
+      industry experience & powered by:"
+  secondTitleSection:
+    images:
+      solutionDiagramImage: images/solution-diagram.png
+      solutionDiagramImageAlt: Solution
+    smallRangeImageAlt: Small Range Image
+    smallRangeImage: images/small-range-img.png
+    title: To vektIQ Approach
+  imageAlt: Range image
+  image: images/range-img.svg
+approachSection:
+  sectionTitle: A win-win approach for companies & vendors
+  sectionSubtitle: Companies, Make Better Decision In No Time & Costs
+  hideApproachSection: true
+pricingSection:
+  hidePricingSection: true
+  sectionTitle: Pricing
+forWhoSection:
+  hideWhoSection: false
+  sectionTitle: Who Is it for?
+customerReviewsSection:
+  hideReviewSection: true
+  sectionTitle: What Our Customers Say
+faqSection:
+  hideFAQSection: true
+  sectionTitle: Frequently Asked Questions
+contactSection:
+  hideContactSection: true
+  sectionTitle: Have More Questions? We Are Happy To Help, Contact Our Team Now.
+  buttonText: Contact Sales
+  buttonLink: "#"
+  buttonIcon: "#"
 ---
